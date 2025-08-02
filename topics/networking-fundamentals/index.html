@@ -94,7 +94,91 @@
                                 </div>
                             </div>
                             
-                            <!-- Continue with other layers... -->
+<div class="col-md-6">
+    <div class="card layer-card bg-light">
+        <div class="card-body">
+            <h5 class="card-title">5. Session Layer</h5>
+            <p class="card-text">Manages sessions or connections between computers. Controls dialogues (connections) between applications.</p>
+            <button class="btn btn-sm btn-outline-primary" onclick="showProtocols('session')">Show Functions</button>
+            <div id="session-protocols" style="display:none; margin-top:10px;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Session establishment, maintenance, and termination</li>
+                    <li class="list-group-item">Synchronization and checkpointing</li>
+                    <li class="list-group-item">Dialog control (half-duplex, full-duplex)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="card layer-card bg-light">
+        <div class="card-body">
+            <h5 class="card-title">4. Transport Layer</h5>
+            <p class="card-text">Ensures reliable data transfer between host systems. Handles segmentation, flow control, and error correction.</p>
+            <button class="btn btn-sm btn-outline-primary" onclick="showProtocols('transport')">Show Protocols</button>
+            <div id="transport-protocols" style="display:none; margin-top:10px;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">TCP - Reliable connection-oriented communication</li>
+                    <li class="list-group-item">UDP - Connectionless communication</li>
+                    <li class="list-group-item">Flow control and error recovery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="card layer-card bg-light">
+        <div class="card-body">
+            <h5 class="card-title">3. Network Layer</h5>
+            <p class="card-text">Responsible for logical addressing and routing of data packets.</p>
+            <button class="btn btn-sm btn-outline-primary" onclick="showProtocols('network')">Show Protocols</button>
+            <div id="network-protocols" style="display:none; margin-top:10px;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">IP - Logical addressing and routing</li>
+                    <li class="list-group-item">ICMP - Error reporting and diagnostics</li>
+                    <li class="list-group-item">Routing protocols (OSPF, BGP)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="card layer-card bg-light">
+        <div class="card-body">
+            <h5 class="card-title">2. Data Link Layer</h5>
+            <p class="card-text">Handles physical addressing, error detection and correction, and frame synchronization.</p>
+            <button class="btn btn-sm btn-outline-primary" onclick="showProtocols('datalink')">Show Protocols</button>
+            <div id="datalink-protocols" style="display:none; margin-top:10px;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ethernet</li>
+                    <li class="list-group-item">PPP (Point-to-Point Protocol)</li>
+                    <li class="list-group-item">MAC addressing</li>
+                    <li class="list-group-item">Error detection (CRC)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="card layer-card bg-light">
+        <div class="card-body">
+            <h5 class="card-title">1. Physical Layer</h5>
+            <p class="card-text">Transmits raw bit stream over physical medium. Defines hardware specifications, cabling, signaling.</p>
+            <button class="btn btn-sm btn-outline-primary" onclick="showProtocols('physical')">Show Details</button>
+            <div id="physical-protocols" style="display:none; margin-top:10px;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cabling standards (Ethernet cables, fiber optics)</li>
+                    <li class="list-group-item">Voltage levels and timing</li>
+                    <li class="list-group-item">Physical topology</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
                             
                             <div class="col-md-6">
                                 <div class="card layer-card bg-light">
